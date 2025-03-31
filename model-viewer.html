@@ -21,17 +21,16 @@
             border: none;
             font-size: 20px;
         }
-
-        #back-button {
-            width: 120px;
-            height: 60px;
-            position: absolute;
-            left: 35px;
-            bottom: 35px;
-            background-color: black;
+        #return-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            padding: 10px 20px;
+            background-color: #3498db;
             color: white;
             border: none;
-            font-size: 20px;
+            cursor: pointer;
+            z-index: 10; /* Ensure it's above the model-viewer */
         }
 
         .button-container {
@@ -47,9 +46,10 @@
     </style>
 </head>
 <body>
-    <model-viewer id="modelViewer" ar shadow-intensity="1" camera-controls touch-action="pan-y">
-    <button id="back-button" slot="back-button">Back</button>
-    <button id="ar-button" slot="ar-button">Start AR</button></model-viewer>
+    <button id="return-button" onclick="window.location.href='index.html'">Return to Thumbnails</button>
+    <model-viewer id="modelViewer" ar shadow-intensity="1" camera-controls touch-action="pan-y"> 
+    <button id="ar-button" slot="ar-button">Start AR</button>
+    </model-viewer>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const modelUrl = urlParams.get('model');
