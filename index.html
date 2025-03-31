@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+    <title>WebAR Model Switcher with Thumbnails</title>
+    <style>
+        #ar-button {
+            width: 120px;
+            height: 60px;
+            position: absolute;
+            right: 35px;
+            bottom: 35px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 20px;
+        }
+        .button-container {
+            position: fixed;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent wrapping */
+        }
+        .thumbnail-button {
+            margin: 0 10px;
+            padding: 10px;
+            border: none;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .thumbnail-button img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 5px;
+        }
+        .thumbnail-button span {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <model-viewer 
+        id="modelViewer"
+        src="models/thumbler.glb" 
+        style="width: 100vw; height: 70vh"
+        ar
+        shadow-intensity="1" 
+        camera-controls 
+        touch-action="pan-y">
+        <button id="ar-button" slot="ar-button">Start AR</button>
+    </model-viewer>
+    <div></div>
+    <div></div>
+    <div class="button-container">
+        <button class="model1-button" onclick="changeModel('models/model1.glb')">
+            <img src="thumbnails/model1_thumb.png" alt="Model1 Thumbnail">
+            <span>Model1</span>
+        </button>
+        <button class="thumbnail-button" onclick="changeModel('models/model2.glb')">
+            <img src="thumbnails/model2_thumb.png" alt="Model 2 Thumbnail">
+            <span>Model 2</span>
+        </button>
+        <button class="thumbnail-button" onclick="changeModel('models/model3.glb')">
+            <img src="thumbnails/model3_thumb.png" alt="Model 3 Thumbnail">
+            <span>Model 3</span>
+        </button>
+        <button class="model4-button" onclick="changeModel('models/model4.glb')">
+            <img src="thumbnails/model4_thumb.png" alt="Model4 Thumbnail">
+            <span>Model 4</span>
+        </button>
+        <button class="thumbnail-button" onclick="changeModel('models/model5.glb')">
+            <img src="thumbnails/model5_thumb.png" alt="Model 5 Thumbnail">
+            <span>Model 5</span>
+        </button>
+        <button class="thumbnail-button" onclick="changeModel('models/model6.glb')">
+            <img src="thumbnails/model6_thumb.png" alt="Model 6 Thumbnail">
+            <span>Model 6</span>
+        </button>
+        <button class="model7-button" onclick="changeModel('models/model7.glb')">
+            <img src="thumbnails/model7_thumb.png" alt="Model7 Thumbnail">
+            <span>Model7</span>
+        </button>
+        <button class="thumbnail-button" onclick="changeModel('models/model8.glb')">
+            <img src="thumbnails/model8_thumb.png" alt="Model 8 Thumbnail">
+            <span>Model 8</span>
+        </button>
+        <button class="thumbnail-button" onclick="changeModel('models/model9.glb')">
+            <img src="thumbnails/model9_thumb.png" alt="Model 9 Thumbnail">
+            <span>Model 9</span>
+        </button>
+        <button class="model10-button" onclick="changeModel('models/model10.glb')">
+            <img src="thumbnails/model10_thumb.png" alt="Model10 Thumbnail">
+            <span>Model10</span>
+        </button>
+              
+    </div>
+
+    <script>
+        function changeModel(modelUrl) {
+            const modelViewer = document.getElementById('modelViewer');
+            modelViewer.setAttribute('src', modelUrl);
+        }
+    </script>
+</body>
+</html>
