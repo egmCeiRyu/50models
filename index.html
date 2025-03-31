@@ -30,12 +30,12 @@
             display: flex;
             overflow-x: auto;
             white-space: nowrap;
-            max-width: 90vw; /* Limit container width */
+            max-width: 90vw;
         }
 
         .thumbnail-button {
-            margin: 0 3px; /* Slightly increased margin */
-            padding: 3px; /* Slightly increased padding */
+            margin: 0 3px;
+            padding: 3px;
             border: none;
             background-color: #f0f0f0;
             cursor: pointer;
@@ -45,9 +45,10 @@
         }
 
             .thumbnail-button img {
-                width: 25px; /* Smaller image width */
-                height: 25px; /* Smaller image height */
+                width: 25px;
+                height: 25px;
                 margin-bottom: 2px;
+                object-fit: cover; /* Ensure consistent scaling */
             }
 
             .thumbnail-button span {
