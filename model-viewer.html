@@ -22,6 +22,18 @@
             font-size: 20px;
         }
 
+        #ar-button {
+            width: 120px;
+            height: 60px;
+            position: absolute;
+            left: 35px;
+            bottom: 35px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 20px;
+        }
+
         .button-container {
             position: fixed;
             bottom: 100px;
@@ -35,7 +47,9 @@
     </style>
 </head>
 <body>
-    <model-viewer id="modelViewer" ar shadow-intensity="1" camera-controls touch-action="pan-y"><button id="ar-button" slot="ar-button">Start AR</button></model-viewer>
+    <model-viewer id="modelViewer" ar shadow-intensity="1" camera-controls touch-action="pan-y">
+    <button id="back-button" slot="back-button">Back</button></model-viewer>
+    <button id="ar-button" slot="ar-button">Start AR</button></model-viewer>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
         const modelUrl = urlParams.get('model');
