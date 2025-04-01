@@ -11,7 +11,7 @@
             height: 100vh;
         }
         #ar-button {
-            width: 120px;
+            width: 150px;
             height: 60px;
             position: absolute;
             right: 35px;
@@ -19,12 +19,12 @@
             background-color: black;
             color: white;
             border: none;
-            font-size: 20px;
+            font-size: 15px;
         }
         #return-button {
             position: fixed;
-            top: 10px;
-            left: 10px;
+            top: 20px;
+            left: 20px;
             padding: 10px 20px;
             background-color: #3498db;
             color: white;
@@ -46,9 +46,9 @@
     </style>
 </head>
 <body>
-    <button id="return-button" onclick="window.location.href='index.html'">Return to Thumbnails</button>
+    <button id="return-button" onclick="window.location.href='index.html'">サムネイルに戻る</button>
     <model-viewer id="modelViewer" ar shadow-intensity="1" camera-controls touch-action="pan-y"> 
-    <button id="ar-button" slot="ar-button">Start AR</button>
+    <button id="ar-button" slot="ar-button">ARスタート</button>
     </model-viewer>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
