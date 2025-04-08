@@ -1,210 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.5" />
-    <title>3D Model Thumbnails</title>
-    <style>
-        .thumbnail-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            border-radius: 25px;
-        }
-        .thumbnail-link {
-            margin: 5px;
-            text-decoration: none;
-        }
-        .thumbnail-img {
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            border-radius: 25px;
-        }
-    </style>
-</head>
-<body>
-    <div class="thumbnail-container">
-        <a href="model-viewer.html?model=models/model1.glb" class="thumbnail-link">
-            <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model2.glb" class="thumbnail-link">
-            <img src="thumbnails/model2_thumb.png" alt="Model 2" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model3.glb" class="thumbnail-link">
-            <img src="thumbnails/model3_thumb.png" alt="Model 3" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model4.glb" class="thumbnail-link">
-            <img src="thumbnails/model4_thumb.png" alt="Model 4" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model5.glb" class="thumbnail-link">
-            <img src="thumbnails/model5_thumb.png" alt="Model 5" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model6.glb" class="thumbnail-link">
-            <img src="thumbnails/model6_thumb.png" alt="Model 6" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model7.glb" class="thumbnail-link">
-            <img src="thumbnails/model7_thumb.png" alt="Model 7" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model8.glb" class="thumbnail-link">
-            <img src="thumbnails/model8_thumb.png" alt="Model 8" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model9.glb" class="thumbnail-link">
-            <img src="thumbnails/model9_thumb.png" alt="Model 9" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model10.glb" class="thumbnail-link">
-            <img src="thumbnails/model10_thumb.png" alt="Model 10" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model1.glb" class="thumbnail-link">
-            <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model2.glb" class="thumbnail-link">
-            <img src="thumbnails/model2_thumb.png" alt="Model 2" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model3.glb" class="thumbnail-link">
-            <img src="thumbnails/model3_thumb.png" alt="Model 3" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model4.glb" class="thumbnail-link">
-            <img src="thumbnails/model4_thumb.png" alt="Model 4" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model5.glb" class="thumbnail-link">
-            <img src="thumbnails/model5_thumb.png" alt="Model 5" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model6.glb" class="thumbnail-link">
-            <img src="thumbnails/model6_thumb.png" alt="Model 6" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model7.glb" class="thumbnail-link">
-            <img src="thumbnails/model7_thumb.png" alt="Model 7" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model8.glb" class="thumbnail-link">
-            <img src="thumbnails/model8_thumb.png" alt="Model 8" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model9.glb" class="thumbnail-link">
-            <img src="thumbnails/model9_thumb.png" alt="Model 9" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model10.glb" class="thumbnail-link">
-            <img src="thumbnails/model10_thumb.png" alt="Model 10" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model1.glb" class="thumbnail-link">
-            <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model2.glb" class="thumbnail-link">
-            <img src="thumbnails/model2_thumb.png" alt="Model 2" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model3.glb" class="thumbnail-link">
-            <img src="thumbnails/model3_thumb.png" alt="Model 3" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model4.glb" class="thumbnail-link">
-            <img src="thumbnails/model4_thumb.png" alt="Model 4" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model5.glb" class="thumbnail-link">
-            <img src="thumbnails/model5_thumb.png" alt="Model 5" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model6.glb" class="thumbnail-link">
-            <img src="thumbnails/model6_thumb.png" alt="Model 6" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model7.glb" class="thumbnail-link">
-            <img src="thumbnails/model7_thumb.png" alt="Model 7" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model8.glb" class="thumbnail-link">
-            <img src="thumbnails/model8_thumb.png" alt="Model 8" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model9.glb" class="thumbnail-link">
-            <img src="thumbnails/model9_thumb.png" alt="Model 9" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model10.glb" class="thumbnail-link">
-            <img src="thumbnails/model10_thumb.png" alt="Model 10" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model1.glb" class="thumbnail-link">
-            <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model2.glb" class="thumbnail-link">
-            <img src="thumbnails/model2_thumb.png" alt="Model 2" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model3.glb" class="thumbnail-link">
-            <img src="thumbnails/model3_thumb.png" alt="Model 3" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model4.glb" class="thumbnail-link">
-            <img src="thumbnails/model4_thumb.png" alt="Model 4" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model5.glb" class="thumbnail-link">
-            <img src="thumbnails/model5_thumb.png" alt="Model 5" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model6.glb" class="thumbnail-link">
-            <img src="thumbnails/model6_thumb.png" alt="Model 6" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model7.glb" class="thumbnail-link">
-            <img src="thumbnails/model7_thumb.png" alt="Model 7" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model8.glb" class="thumbnail-link">
-            <img src="thumbnails/model8_thumb.png" alt="Model 8" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model9.glb" class="thumbnail-link">
-            <img src="thumbnails/model9_thumb.png" alt="Model 9" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model10.glb" class="thumbnail-link">
-            <img src="thumbnails/model10_thumb.png" alt="Model 10" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model1.glb" class="thumbnail-link">
-            <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model2.glb" class="thumbnail-link">
-            <img src="thumbnails/model2_thumb.png" alt="Model 2" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model3.glb" class="thumbnail-link">
-            <img src="thumbnails/model3_thumb.png" alt="Model 3" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model4.glb" class="thumbnail-link">
-            <img src="thumbnails/model4_thumb.png" alt="Model 4" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model5.glb" class="thumbnail-link">
-            <img src="thumbnails/model5_thumb.png" alt="Model 5" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model6.glb" class="thumbnail-link">
-            <img src="thumbnails/model6_thumb.png" alt="Model 6" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model7.glb" class="thumbnail-link">
-            <img src="thumbnails/model7_thumb.png" alt="Model 7" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model8.glb" class="thumbnail-link">
-            <img src="thumbnails/model8_thumb.png" alt="Model 8" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model9.glb" class="thumbnail-link">
-            <img src="thumbnails/model9_thumb.png" alt="Model 9" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model10.glb" class="thumbnail-link">
-            <img src="thumbnails/model10_thumb.png" alt="Model 10" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model1.glb" class="thumbnail-link">
-            <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model2.glb" class="thumbnail-link">
-            <img src="thumbnails/model2_thumb.png" alt="Model 2" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model3.glb" class="thumbnail-link">
-            <img src="thumbnails/model3_thumb.png" alt="Model 3" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model4.glb" class="thumbnail-link">
-            <img src="thumbnails/model4_thumb.png" alt="Model 4" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model5.glb" class="thumbnail-link">
-            <img src="thumbnails/model5_thumb.png" alt="Model 5" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model6.glb" class="thumbnail-link">
-            <img src="thumbnails/model6_thumb.png" alt="Model 6" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model7.glb" class="thumbnail-link">
-            <img src="thumbnails/model7_thumb.png" alt="Model 7" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model8.glb" class="thumbnail-link">
-            <img src="thumbnails/model8_thumb.png" alt="Model 8" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model9.glb" class="thumbnail-link">
-            <img src="thumbnails/model9_thumb.png" alt="Model 9" class="thumbnail-img" />
-        </a>
-        <a href="model-viewer.html?model=models/model10.glb" class="thumbnail-link">
-            <img src="thumbnails/model10_thumb.png" alt="Model 10" class="thumbnail-img" />
-        </a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.5" />
+        <title>3D Model Thumbnails</title>
+        <style>
+            .thumbnail-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                background-color: dimgrey;
+            }
+            .thumbnail-link {
+                margin: 25px;
+                text-decoration: none;
+
+            }
+            .thumbnail-img {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                display: block;
+                margin: 0 auto;
+                border-radius: 10px;
+                background-color: none;
+            }
+            
+            .thumbnail-link {
+                display: block;
+                text-align: center;
+                font-family: sans-serif;
+                color: black;
+            }
+            
+            a {
+                text-align:center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="thumbnail-container">
+            <a href="model-viewer.html?model=models/model1.glb" class="thumbnail-link" >
+                <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img">
+            CAR1
+            </a>
+            <a href="model-viewer.html?model=models/model2.glb" class="thumbnail-link">
+                <img src="thumbnails/model2_thumb.png" alt="Model 2" class="thumbnail-img" />CAR2
+            </a>
+            <a href="model-viewer.html?model=models/model3.glb" class="thumbnail-link">
+                <img src="thumbnails/model3_thumb.png" alt="Model 3" class="thumbnail-img" />CAR3
+            </a>
+            <a href="model-viewer.html?model=models/model4.glb" class="thumbnail-link">
+                <img src="thumbnails/model4_thumb.png" alt="Model 4" class="thumbnail-img" />CAR4
+            </a>
+            <a href="model-viewer.html?model=models/model5.glb" class="thumbnail-link">
+                <img src="thumbnails/model5_thumb.png" alt="Model 5" class="thumbnail-img" />CAR5
+            </a>
+            <a href="model-viewer.html?model=models/model6.glb" class="thumbnail-link">
+                <img src="thumbnails/model6_thumb.png" alt="Model 6" class="thumbnail-img" />CAR6
+            </a>
+            <a href="model-viewer.html?model=models/model7.glb" class="thumbnail-link">
+                <img src="thumbnails/model7_thumb.png" alt="Model 7" class="thumbnail-img" />CAR7
+            </a>
+            <a href="model-viewer.html?model=models/model8.glb" class="thumbnail-link">
+                <img src="thumbnails/model8_thumb.png" alt="Model 8" class="thumbnail-img" />CAR8
+            </a>
+            <a href="model-viewer.html?model=models/model9.glb" class="thumbnail-link">
+                <img src="thumbnails/model9_thumb.png" alt="Model 9" class="thumbnail-img" />CAR9
+            </a>
+            <a href="model-viewer.html?model=models/model10.glb" class="thumbnail-link">
+                <img src="thumbnails/model10_thumb.png" alt="Model 10" class="thumbnail-img" />CAR10
+            </a>
+            <a href="model-viewer.html?model=models/model1.glb" class="thumbnail-link">
+                <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img" />CAR11
+            </a>
+            <a href="model-viewer.html?model=models/model2.glb" class="thumbnail-link">
+                <img src="thumbnails/model2_thumb.png" alt="Model 2" class="thumbnail-img" />CAR12
+            </a>
+            <a href="model-viewer.html?model=models/model3.glb" class="thumbnail-link">
+                <img src="thumbnails/model3_thumb.png" alt="Model 3" class="thumbnail-img" />CAR13
+            </a>
+            <a href="model-viewer.html?model=models/model4.glb" class="thumbnail-link">
+                <img src="thumbnails/model4_thumb.png" alt="Model 4" class="thumbnail-img" />CAR14
+            </a>
+            <a href="model-viewer.html?model=models/model5.glb" class="thumbnail-link">
+                <img src="thumbnails/model5_thumb.png" alt="Model 5" class="thumbnail-img" />CAR15
+            </a>
+            <a href="model-viewer.html?model=models/model6.glb" class="thumbnail-link">
+                <img src="thumbnails/model6_thumb.png" alt="Model 6" class="thumbnail-img" />CAR16
+            </a>
+            <a href="model-viewer.html?model=models/model7.glb" class="thumbnail-link">
+                <img src="thumbnails/model7_thumb.png" alt="Model 7" class="thumbnail-img" />CAR17
+            </a>
+            <a href="model-viewer.html?model=models/model8.glb" class="thumbnail-link">
+                <img src="thumbnails/model8_thumb.png" alt="Model 8" class="thumbnail-img" />CAR18
+            </a>
+            <a href="model-viewer.html?model=models/model9.glb" class="thumbnail-link">
+                <img src="thumbnails/model9_thumb.png" alt="Model 9" class="thumbnail-img" />CAR19
+            </a>
+            <a href="model-viewer.html?model=models/model10.glb" class="thumbnail-link">
+                <img src="thumbnails/model10_thumb.png" alt="Model 10" class="thumbnail-img" />CAR20
+            </a>
+            <a href="model-viewer.html?model=models/model1.glb" class="thumbnail-link">
+                <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img" />CAR21
+            </a>
+            <a href="model-viewer.html?model=models/model2.glb" class="thumbnail-link">
+                <img src="thumbnails/model2_thumb.png" alt="Model 2" class="thumbnail-img" />CAR22
+            </a>
+            <a href="model-viewer.html?model=models/model3.glb" class="thumbnail-link">
+                <img src="thumbnails/model3_thumb.png" alt="Model 3" class="thumbnail-img" />CAR23
+            </a>
+            <a href="model-viewer.html?model=models/model4.glb" class="thumbnail-link">
+                <img src="thumbnails/model4_thumb.png" alt="Model 4" class="thumbnail-img" />CAR24
+            </a>
+            <a href="model-viewer.html?model=models/model5.glb" class="thumbnail-link">
+                <img src="thumbnails/model5_thumb.png" alt="Model 5" class="thumbnail-img" />CAR25
+            </a>
+            <a href="model-viewer.html?model=models/model6.glb" class="thumbnail-link">
+                <img src="thumbnails/model6_thumb.png" alt="Model 6" class="thumbnail-img" />CAR26
+            </a>
+            <a href="model-viewer.html?model=models/model7.glb" class="thumbnail-link">
+                <img src="thumbnails/model7_thumb.png" alt="Model 7" class="thumbnail-img" />CAR27
+            </a>
+            <a href="model-viewer.html?model=models/model8.glb" class="thumbnail-link">
+                <img src="thumbnails/model8_thumb.png" alt="Model 8" class="thumbnail-img" />CAR28
+            </a>
+            <a href="model-viewer.html?model=models/model9.glb" class="thumbnail-link">
+                <img src="thumbnails/model9_thumb.png" alt="Model 9" class="thumbnail-img" />CAR29
+            </a>
+            <a href="model-viewer.html?model=models/model10.glb" class="thumbnail-link">
+                <img src="thumbnails/model10_thumb.png" alt="Model 10" class="thumbnail-img" />CAR30
+            </a>
+            <a href="model-viewer.html?model=models/model1.glb" class="thumbnail-link">
+                <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img" />CAR31
+            </a>
+            <a href="model-viewer.html?model=models/model2.glb" class="thumbnail-link">
+                <img src="thumbnails/model2_thumb.png" alt="Model 2" class="thumbnail-img" />CAR32
+            </a>
+            <a href="model-viewer.html?model=models/model3.glb" class="thumbnail-link">
+                <img src="thumbnails/model3_thumb.png" alt="Model 3" class="thumbnail-img" />CAR33
+            </a>
+            <a href="model-viewer.html?model=models/model4.glb" class="thumbnail-link">
+                <img src="thumbnails/model4_thumb.png" alt="Model 4" class="thumbnail-img" />CAR34
+            </a>
+            <a href="model-viewer.html?model=models/model5.glb" class="thumbnail-link">
+                <img src="thumbnails/model5_thumb.png" alt="Model 5" class="thumbnail-img" />CAR35
+            </a>
+            <a href="model-viewer.html?model=models/model6.glb" class="thumbnail-link">
+                <img src="thumbnails/model6_thumb.png" alt="Model 6" class="thumbnail-img" />CAR36
+            </a>
+            <a href="model-viewer.html?model=models/model7.glb" class="thumbnail-link">
+                <img src="thumbnails/model7_thumb.png" alt="Model 7" class="thumbnail-img" />CAR37
+            </a>
+            <a href="model-viewer.html?model=models/model8.glb" class="thumbnail-link">
+                <img src="thumbnails/model8_thumb.png" alt="Model 8" class="thumbnail-img" />CAR38
+            </a>
+            <a href="model-viewer.html?model=models/model9.glb" class="thumbnail-link">
+                <img src="thumbnails/model9_thumb.png" alt="Model 9" class="thumbnail-img" />CAR39
+            </a>
+            <a href="model-viewer.html?model=models/model10.glb" class="thumbnail-link">
+                <img src="thumbnails/model10_thumb.png" alt="Model 10" class="thumbnail-img" />CAR40
+            </a>
+            <a href="model-viewer.html?model=models/model1.glb" class="thumbnail-link">
+                <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img" />CAR41
+            </a>
+            <a href="model-viewer.html?model=models/model2.glb" class="thumbnail-link">
+                <img src="thumbnails/model2_thumb.png" alt="Model 2" class="thumbnail-img" />CAR42
+            </a>
+            <a href="model-viewer.html?model=models/model3.glb" class="thumbnail-link">
+                <img src="thumbnails/model3_thumb.png" alt="Model 3" class="thumbnail-img" />CAR43
+            </a>
+            <a href="model-viewer.html?model=models/model4.glb" class="thumbnail-link">
+                <img src="thumbnails/model4_thumb.png" alt="Model 4" class="thumbnail-img" />CAR44
+            </a>
+            <a href="model-viewer.html?model=models/model5.glb" class="thumbnail-link">
+                <img src="thumbnails/model5_thumb.png" alt="Model 5" class="thumbnail-img" />CAR45
+            </a>
+            <a href="model-viewer.html?model=models/model6.glb" class="thumbnail-link">
+                <img src="thumbnails/model6_thumb.png" alt="Model 6" class="thumbnail-img" />CAR46
+            </a>
+            <a href="model-viewer.html?model=models/model7.glb" class="thumbnail-link">
+                <img src="thumbnails/model7_thumb.png" alt="Model 7" class="thumbnail-img" />CAR47
+            </a>
+            <a href="model-viewer.html?model=models/model8.glb" class="thumbnail-link">
+                <img src="thumbnails/model8_thumb.png" alt="Model 8" class="thumbnail-img" />CAR48
+            </a>
+            <a href="model-viewer.html?model=models/model9.glb" class="thumbnail-link">
+                <img src="thumbnails/model9_thumb.png" alt="Model 9" class="thumbnail-img" />CAR49
+            </a>
+            <a href="model-viewer.html?model=models/model10.glb" class="thumbnail-link">
+                <img src="thumbnails/model10_thumb.png" alt="Model 10" class="thumbnail-img" />CAR50
+            </a>
+
         </div>
-</body>
+    </body>
 </html>
