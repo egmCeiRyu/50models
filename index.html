@@ -4,7 +4,20 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.5" />
         <title>3D Model Thumbnails</title>
+        <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
         <style>
+
+            #ar-button {
+            width: 120px;
+            height: 60px;
+            position: absolute;
+            right: 35px;
+            bottom: 35px;
+            background-color: black;
+            color: white;
+            border: none;
+            font-size: 20px;
+            }
             .thumbnail-container {
                 display: flex;
                 flex-wrap: wrap;
@@ -49,6 +62,18 @@
         </style>
     </head>
     <body>
+        <model-viewer 
+            id="modelViewer"
+            src="models/thumbler.glb" 
+            style="width: 100vw; height: 70vh"
+            ar
+            shadow-intensity="1" 
+            camera-controls 
+            touch-action="pan-y">
+            <button id="ar-button" slot="ar-button">Start AR</button>
+        </model-viewer>
+        <div></div>
+        <div></div>
         <div class="thumbnail-container">
             <a href="https://untitled-m6uyhz1ga4lm-z1yal3b.needle.run/?room=304812" class="thumbnail-link" >
                 <img src="thumbnails/model1_thumb.png" alt="Model 1" class="thumbnail-img">
