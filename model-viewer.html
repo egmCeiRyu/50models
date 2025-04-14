@@ -56,7 +56,17 @@
         const modelUrl = urlParams.get('model');
         const modelViewer = document.getElementById('modelViewer');
         modelViewer.setAttribute('src', modelUrl);
-        light.direction.set(0.5, -1, 0.5);
     </script>
+    <script>
+  const modelViewer = document.querySelector('#model');
+
+  modelViewer.addEventListener('load', () => {
+    const scene = modelViewer.scene;
+    const light = scene.shadowLight;
+
+    // Change light direction here (x, y, z)
+    light.direction.set(0.5, -1, 0.5); // Adjust this vector as needed
+  });
+</script>
 </body>
 </html>
