@@ -48,7 +48,13 @@ h1 {
     font-weight:bold;
     font-family: 'Roboto';
     margin-top: 5px;
-}         
+}   
+
+.label {
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto';  
+}
 
 @media (min-width: 601px) {
     .thumbnail-link {
