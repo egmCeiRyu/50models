@@ -55,6 +55,8 @@ h1 {
     color: white;
     font-weight: bold;
     font-family: 'Roboto';  
+    margin-top: 10px;    /* space above */
+    display: inline-block;
 }
 
 @media (min-width: 601px) {
