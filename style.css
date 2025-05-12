@@ -27,10 +27,7 @@ h1 {
   border-radius: 20px;
   box-sizing: border-box;
 }
-.thumbnail-link {
-  margin: 25px;
-  text-decoration: none;
-}
+
 .thumbnail-img {
   width: 120px;
   height: 120px;
@@ -42,12 +39,14 @@ h1 {
 }
             
 .thumbnail-link {
-  display: block;
-  text-align: center;
-  font-family: sans-serif;
-  color: black;
-}
-            
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+}         
 a {
   text-align:center;
 }
