@@ -51,6 +51,7 @@ a {
   text-align:center;
   color: white;
   padding: 2px;
+  font-weight: bold;
 }
 @media (min-width: 601px) {
     .thumbnail-link {
