@@ -47,6 +47,7 @@ h1 {
     color: white;
     font-weight:bold;
     font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
 }         
 
 @media (min-width: 601px) {
