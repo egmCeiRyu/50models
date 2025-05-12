@@ -1,3 +1,15 @@
 h1 {
   text-decoration: underline;
 }
+
+#ar-button{
+  width: 120px;
+  height:60px;
+  position:absolute;
+  right:35px;
+  bottom: 35px;
+  background-color:black;
+  color:white;
+  border:none;
+  font-size:20px;
+}
