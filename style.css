@@ -1,3 +1,17 @@
+.title{
+    display: block;
+    background-color: antiquewhite;
+    width: 765px;
+    height:60px;
+    border-radius: 10px;
+    text-align:center;
+    padding: 11PX;
+    margin: 10PX;
+    font-weight: bold;
+    font-size: 37px;
+}
+
+
 h1 {
   text-decoration: underline;
 }
