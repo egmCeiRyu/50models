@@ -1,6 +1,6 @@
 .title{
     display: block;
-    background-color: antiquewhite;
+    background-color: white;
     width: 765px;
     height:60px;
     border-radius: 10px;
@@ -9,8 +9,8 @@
     margin: 10PX;
     font-weight: bold;
     font-size: 37px;
+    font-family: 'Roboto';
 }
-
 
 h1 {
   text-decoration: underline;
