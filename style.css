@@ -129,7 +129,7 @@ model-viewer {
     z-index: 10; /* Ensure it's above the model-viewer */
 }
 
-img.modelqr {
+.modelqr {
     width: 80px;
     height:80px; 
     margin-left: 13px;
