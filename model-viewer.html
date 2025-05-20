@@ -6,43 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Model Viewer</title>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
-    <style>
-        model-viewer {
-              width: 100vw;
-              height: calc(var(--vh, 1vh) * 100);
-              display: block;
-              background-color: white;
-    }
-        #ar-button {
-            width: 150px;
-            height: 60px;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 100px;
-            margin-bottom:10px;
-            background-color: black;
-            color: white;
-            border: none;
-            font-size: 15px;
-            border-radius: 10px;
-        }
-        #return-button {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: white;
-            border: none;
-            cursor: pointer;
-            z-index: 10; /* Ensure it's above the model-viewer */
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <button id="return-button" onclick="window.location.href='index.html'">サムネイルに戻る</button>
+    <img class="modelqr" src="qrcode/qr-model1.png">
     <model-viewer ar id="modelViewer" shadow-intensity="1" camera-controls touch-action="pan-y" shadow-softness="0"
     camera-orbit="0deg 75deg 100m">
     <button id="ar-button" slot="ar-button">ARスタート</button>
@@ -51,13 +19,22 @@
         const urlParams = new URLSearchParams(window.location.search);
         const modelUrl = urlParams.get('model');
         const modelViewer = document.getElementById('modelViewer');
+        const qrImage = document.querySelector('.modelqr');
     
         if (modelUrl) {
             modelViewer.setAttribute('src', modelUrl);
+
+            // Extract number from model filename, e.g., "model3.glb"
+            const match = modelUrl.match(/model(\d+)/);
+            if (match) {
+                const modelNumber = match[1];
+                qrImage.src = `qrcode/qr-model${modelNumber}.png`;
+            } else {
+                console.warn("Model number not found in URL.");
+            }
         } else {
             console.warn("No model URL provided in the query string.");
         }
-    
         modelViewer.addEventListener('load', () => {
             const scene = modelViewer.scene;
             const light = scene.shadowLight;
