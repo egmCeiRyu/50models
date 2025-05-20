@@ -1,12 +1,12 @@
 .title{
     display: block;
     background-color: white;
-    width: 765px;
+    width: 678px;
     height:60px;
     border-radius: 10px;
     text-align:center;
     padding: 11PX;
-    margin: 10PX;
+    margin: 13PX;
     font-weight: bold;
     font-size: 37px;
     font-family: 'Roboto';
@@ -35,7 +35,7 @@ h1 {
   justify-content: center;
   background-color: dimgrey;
   width: 100%;
-  max-width: 800px;
+  max-width: 786px;
   margin: auto;
   padding: 10px;
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.38);
@@ -49,7 +49,7 @@ h1 {
   object-fit: cover;
   display: block;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 9px;
   background-color: none;
 }
             
@@ -66,7 +66,6 @@ h1 {
 }   
 
 .label {
-  　padding:　5px;
     color: white;
     font-weight: bold;
     font-family: 'Roboto';  
