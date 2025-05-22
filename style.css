@@ -137,3 +137,11 @@ model-viewer {
     z-index: 10;
     position: fixed;
 }
+
+
+@media (min-width: 768px) {
+  .thumbnail-img {
+    width: 180px;
+    height: 180px;
+  }
+}
